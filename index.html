@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang='en-us'>
-	<head>
-		<meta charset='UFT-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>RPG Game</title>
-		<!-- CSS Reset -->
-		<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
-		<!-- Own CSS -->
-		<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-	</head>
-	<body>
-		<h1></h1>
-		<script type='text/javascript' src='assets/javascript/script.js'></script>
-	</body>
+<head>
+	<meta charset='UFT-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>RPG Game</title>
+	<!-- CSS Reset -->
+	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+</head>
+<body>
+	<!-- Header -->
+	<!-- Row 1 -->
+	<div class='container'>
+		<div class='row'>
+			<div class='col-lg-12 col-xs-12'>
+				<h1>Star Wars RPG</h1>
+			</div>
+		</div>
+			<!-- Pick You Player -->
+			<!-- Row 2 -->
+			<div class='row'>
+				<div class='col-lg-6 col-xs-6'>
+					<h2>Pick Your Player</h2>
+				</div>
+				
+				<div class='col-lg-6'>
+					<aside id='originalLocation'>
+						<div class='row'>
+							<div class='col-lg-3'>
+								<div id='box1' class='box clickElement' value='120'></div>
+							</div>
+							<div class='col-lg-3'>
+								<div id='box2' class='box clickElement' value='150'></div>
+							</div>
+							<div class='col-lg-3'>
+								<div id='box3' class='box clickElement' value='100'></div>
+							</div>
+							<div class='col-lg-3'>
+								<div id='box4' class='box clickElement' value='180'></div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+			
+			<!-- Player Loation -->
+			<!-- Row 3 -->
+			<div class='row'>
+				<div class='col-lg-12'>
+				<section id='playerLocation'></section>
+			</div>
+		</div>
+		<!-- Pick You Opponent -->
+		<!-- Row 4 -->
+		<div class='row'>
+			<div class='col-lg-12 col-xs-12'>
+				<h2>Pick Your Opponent</h2>
+			</div>
+		</div>
+		<!-- Opponent Position -->
+		<!-- Row 5 -->
+		<div class='row'>
+			<div class='col-lg-12'>
+			<section id='opponentLocation'></section>
+		</div>
+	</div>
+	<!-- Button Location -->
+	<!-- Row 6 -->
+	<div class='row'>
+		<div class='col-lg-12'>
+		<section id='buttonLocation'></section>
+	</div>
+</div>
+</div>
+<!-- jQuery -->
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script type='text/javascript' src='assets/javascript/script.js'></script>
+</body>
 </html>
