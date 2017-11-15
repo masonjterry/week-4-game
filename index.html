@@ -8,6 +8,8 @@
 	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
 	<!-- Bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 	<!-- CSS -->
 	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
 </head>
@@ -16,31 +18,33 @@
 	<!-- Row 1 -->
 	<div class='container'>
 		<div class='row'>
-			<div class='col-lg-12 col-xs-12'>
-				<h1>Star Wars RPG</h1>
+			<div class='col-md-12 col-sm-12'>
+				<h1 class='text-center'>Star Wars RPG</h1>
 			</div>
 		</div>
 			<!-- Pick You Player -->
 			<!-- Row 2 -->
 			<div class='row'>
-				<div class='col-lg-6 col-xs-6'>
-					<h2>Pick Your Player</h2>
+				<div class='col-md-6 col-sm-6'>
+					<div class='h2-container'>
+						<h2>Pick Your Player</h2>
+					</div>
 				</div>
 				
-				<div class='col-lg-6'>
+				<div class='col-md-6 col-sm-6'>
 					<aside id='originalLocation'>
 						<div class='row'>
-							<div class='col-lg-3'>
-								<div id='box1' class='box clickElement' value='120'></div>
+							<div class='col-md-3 col-sm-3'>
+								<div id='box1' class='box player' value='120'><img src='assets/images/lukeSkywalker.jpg' alt='luke'><p class='healthPoints'>120</p></div>
 							</div>
-							<div class='col-lg-3'>
-								<div id='box2' class='box clickElement' value='150'></div>
+							<div class='col-md-3  col-sm-3'>
+								<div id='box2' class='box player' value='150'><img src='assets/images/yoda.jpg' alt='yoda'><p class='healthPoints'>150</p></div>
 							</div>
-							<div class='col-lg-3'>
-								<div id='box3' class='box clickElement' value='100'></div>
+							<div class='col-md-3  col-sm-3'>
+								<div id='box3' class='box player' value='100'><img src='assets/images/darthVader.png' alt='darth'><p class='healthPoints'>100</p></div>
 							</div>
-							<div class='col-lg-3'>
-								<div id='box4' class='box clickElement' value='180'></div>
+							<div class='col-md-3  col-sm-3'>
+								<div id='box4' class='box player' value='180'><img src='assets/images/kyloRen.jpg' alt='kylo'><p class='healthPoints'>180</p></div>
 							</div>
 						</div>
 					</aside>
@@ -50,29 +54,32 @@
 			<!-- Player Loation -->
 			<!-- Row 3 -->
 			<div class='row'>
-				<div class='col-lg-12'>
-				<section id='playerLocation'></section>
+				<div class='col-md-12'>
+				<section id='playerLocation' class='playerContainer'></section>
 			</div>
 		</div>
 		<!-- Pick You Opponent -->
 		<!-- Row 4 -->
 		<div class='row'>
-			<div class='col-lg-12 col-xs-12'>
-				<h2>Pick Your Opponent</h2>
+			<div class='col-md-12 col-xs-12'>
+				<div class='h-container'>
+					<h2>Pick Your Opponent</h2>
+				</div>
 			</div>
 		</div>
 		<!-- Opponent Position -->
 		<!-- Row 5 -->
 		<div class='row'>
-			<div class='col-lg-12'>
-			<section id='opponentLocation'></section>
+			<div class='col-md-12'>
+			<section id='opponentLocation' class='playerContainer'></section>
 		</div>
 	</div>
 	<!-- Button Location -->
 	<!-- Row 6 -->
 	<div class='row'>
-		<div class='col-lg-12'>
-		<section id='buttonLocation'></section>
+		<div class='col-md-12'>
+		<button id='attackButton'>Attack</button>
+		<button id='restart'>New Game</button>
 	</div>
 </div>
 </div>
