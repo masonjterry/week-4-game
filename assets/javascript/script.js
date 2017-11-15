@@ -93,12 +93,15 @@ $(document).ready( function() {
 
 	}
 
+
+// attack function
+	// if player or opponent hp is = to or below 0 they lose
 	function attack() {
 		
 		buttonClick = ($(this).attr('id'));
 
 		// if (buttonClick === 'attack') {
-		// 	playerResult -= 
+		// 	playerResult -= playerHealthPoints
 		// }
 
 
